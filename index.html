@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 
@@ -12,39 +15,42 @@
 
   <!-- menu -->
 
-  <header>
-    <a href="">
-      <img src="" alt="Logo">
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">course</a>
-        </li>
-        <li>
-          <a href="">blog</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- login -->
-    <nav>
-      <ul>
-        <li>
-          <a href="">Login</a>
-        </li>
-        <li>
-          <Button>
-            <i class="bi bi-list"></i>
-          </Button>
-        </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="contenedor header__menu">
+      <a class="nav__list" href="">
+        <img src="logo.png" alt="Logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">course</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">blog</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- login -->
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--secundario" href="">Login</a>
+          </li>
+          <li class="nav__item">
+            <Button class="nav__boton">
+              <i class="bi bi-list"></i>
+            </Button>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
@@ -52,12 +58,12 @@
 
     <!-- seccion de inicio  -->
 
-    <section class="inicio">
-      <div>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur.
+    <section id="inicio">
+      <div class="contenedor inicio">
+        <h1 class="inicio__titulo">
+          Lm.<span class="titulo__flaco"> ipsum dolor</span>
         </h1>
-        <h2>
+        <h2 class="inicio__">
           Lorem ipsum, dolor sit amet consectetur adipisicing.
         </h2>
         <p>
@@ -82,7 +88,7 @@
 
     <!-- banner -->
     <section>
-      <div>
+      <div class="contenedor">
         <p>
           Lorem, ipsum.
         </p>
@@ -95,28 +101,31 @@
 
     <!-- exploret -->
     <section>
-      <div>
-        <p>Exprore</p>
-        <p>online curses</p>
-      </div>
-      <div>
-        <figure>
-          <img src="" alt="">
-        </figure>
-        <button>
-          <i class="bi bi-arrow-down"></i>
-        </button>
-      </div>
-      <div>
-        <p>Exprore</p>
-        <p>online curses</p>
+      <div class="contenedor">
+
+        <div>
+          <p>Exprore</p>
+          <p>online curses</p>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="">
+          </figure>
+          <button>
+            <i class="bi bi-arrow-down"></i>
+          </button>
+        </div>
+        <div>
+          <p>Exprore</p>
+          <p>online curses</p>
+        </div>
       </div>
     </section>
 
     <!-- cars  -->
 
     <section>
-      <div>
+      <div class="contenedor">
         <div>
           <h1>level 1</h1>
           <p>
@@ -151,7 +160,7 @@
     <!-- trabajos -->
 
     <section>
-      <div>
+      <div class="contenedor">
 
         <div>
           <h1>Lorem, ipsum dolor.</h1>
@@ -191,7 +200,7 @@
 
     <!-- negrito -->
     <section>
-      <div>
+      <div class="contenedor">
 
         <div>
           <figure>
@@ -214,7 +223,7 @@
     <!-- magenta -->
 
     <section>
-      <div>
+      <div class="contenedor">
 
         <div>
           <h1>Lorem ipsum dolor sit amet consectetur</h1>
@@ -233,7 +242,7 @@
     <!-- testimonios -->
 
     <section>
-      <div>
+      <div class="contenedor">
         <div>
           <h1>Lorem, ipsum dolor.</h1>
         </div>
@@ -364,7 +373,7 @@
 
     <!-- suscribete -->
     <section>
-      <div>
+      <div class="contenedor">
         <div>
           <figure>
             <img src="" alt="persona">
@@ -392,53 +401,56 @@
   </main>
 
   <footer>
-    <div>
-      <h1>Lorem, ipsum.</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Lorem, ipsum.</a>
-          </li>
-          <li>
-            <a href="">Lorem.</a>
-          </li>
-          <li>
-            <a href="">Lorem, ipsum.</a>
-          </li>
-          <li>
-            <a href="">Lorem, ipsum.</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div>
-      <h1>Lorem, ipsum.</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni ab perspiciatis delectus dolores
-        repellat.</p>
-    </div>
-    <div>
-      <h1>Lorem, ipsum dolor.</h1>
-      <form action="">
-        <input type="text">
-        <button><i class="bi bi-send"></i></button>
-      </form>
-    </div>
-    <div>
-      <div>Lorem, ipsum.</div>
+    <div class="contenedor">
+
       <div>
-        <a href="">
-          <i class="bi bi-facebook"></i>
-        </a>
+        <h1>Lorem, ipsum.</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Lorem, ipsum.</a>
+            </li>
+            <li>
+              <a href="">Lorem.</a>
+            </li>
+            <li>
+              <a href="">Lorem, ipsum.</a>
+            </li>
+            <li>
+              <a href="">Lorem, ipsum.</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div>
-        <a href="">
-          <i class="bi bi-instagram"></i>
-        </a>
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni ab perspiciatis delectus dolores
+          repellat.</p>
       </div>
       <div>
-        <a href="">
-          <i class="bi bi-youtube"></i>
-        </a>
+        <h1>Lorem, ipsum dolor.</h1>
+        <form action="">
+          <input type="text">
+          <button><i class="bi bi-send"></i></button>
+        </form>
+      </div>
+      <div>
+        <div>Lorem, ipsum.</div>
+        <div>
+          <a href="">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
