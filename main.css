@@ -83,24 +83,86 @@ body {
 }
 
 #inicio {
-  /* background-image: url(saludo.png);
-  object-fit: cover;
-  height: 100%;
-  width: 100%; */
-  background-color: rgb(146, 176, 101);
+  /* background-image: url("saludo.png"); 
+ background-repeat: no-repeat;
+ background-size: calc(100%);
+ height: calc(100vh - var(--header)); */
+  /* background-color: grey; */
 }
 
-.inicio {
-  height: 87vh;
+.slider {
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.inicio__titulo {
-  font-size: 4rem;
+.slider__contender {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider__iformacion {
+  flex: 1;
+  max-width: 620px;
+  margin: 0 20px;
+}
+
+.slider__imagen {
+}
+
+.slider__img {
+  max-width: 720px;
+}
+
+.slider__titulo {
+  font-size: 6rem;
+  padding-bottom: 30px;
 }
 
 .titulo__flaco {
   font-weight: lighter;
   font-size: 2rem;
+}
+.slider__parrafo {
+  line-height: 1.8;
+  color: #1c1c1c;
+  padding-top: 30px;
+}
+
+.slider__botones {
+  display: flex;
+  gap: 1rem;
+  padding-top: 30px;
+}
+
+.slider__accion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accion__flecha {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 12px 26px;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.botonn {
+  background: #812181;
+  padding: 12px 24px;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.botonn--blanco {
+  background-color: #f1f1f1;
+  color: #000;
 }
 
 /* banner */
@@ -247,4 +309,190 @@ body {
 
 .card--border {
   border: solid 1px var(--color-primary);
+}
+
+/* ---------------------------trabajo------------------------ */
+
+.contenedor__work {
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  /* gap: 300px; */
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
+
+  display: grid;
+  gap: 2rem;
+  grid-template:
+    "one two three" 100px
+    "one two four" auto / 600px auto 600px;
+}
+
+.work__text {
+  grid-area: one;
+}
+
+.work__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.work__boton {
+  width: fit-content;
+}
+
+.work__titulo {
+  font-weight: 800;
+  font-size: 54px;
+  display: flex;
+  align-items: baseline;
+}
+
+.work__titulo--2 {
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.work__parrafo {
+  font-weight: 700;
+}
+
+.work__items {
+  display: flex;
+  flex-direction: row;
+}
+
+.word__medio {
+  grid-area: two;
+  display: flex;
+  justify-content: flex-end;
+
+  /* height: 0px; */
+  flex-direction: column;
+}
+
+.medio__text {
+  rotate: 90deg;
+}
+
+.word__arriba {
+  grid-area: three;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+.work__imagen {
+  grid-area: four;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen__word {
+  height: auto;
+  width: auto;
+}
+
+/* --------------------negritoo------------------------ */
+
+/* .negrito__fondo {
+  background-image: url(hombre-sombrero-ropa-elegante-moviendose-sobre-fondo-naranja_197531-26971-removebg-preview.png);
+} */
+
+.negrito {
+  background-image: url(icono-durazno-pieza-naranja-caricatura-icono-vector-durazno-pieza-naranja-diseno-web-aislado-sobre-fondo-blanco_98402-27253-removebg-preview.png);
+}
+
+.contenedor__negrito {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.imagen__texto {
+  display: flex;
+  align-items: end;
+}
+
+.negrito__imagen {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.imagen__texto {
+  rotate: -90deg;
+}
+
+.negrito__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+.negrito__titulo {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.negrito__boton {
+  width: fit-content;
+}
+
+/* -------------------------------------------magenta------------------------------------------- */
+
+.magenta__fondo {
+  background-color: rgb(146, 80, 167);
+}
+
+.contenedor__magenta {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+
+.magenta__imagen {
+  opacity: 0.3;
+}
+
+.magenta__titulo {
+  font-size: 50px;
+}
+
+.magenta__texto {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.magenta__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.magenta__boton {
+  background-color: #000;
+  width: fit-content;
+}
+
+.magenta__flecha {
+  align-self: flex-end;
+  padding-bottom: 40px;
+}
+
+.magenta__icono {
+  color: white;
+  border: solid 1px white;
+  padding: 15px 35px;
+  width: 30px;
 }
